@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40sp" >
+        
+        <TextView
+            android:id="@+id/fila_lista_pedidos_pedido"
+            android:layout_width="95sp"
+            android:layout_height="wrap_content" style="@style/CodeFont_label_value"/>
+        
+        <TextView
+            android:id="@+id/fila_lista_pedidos_codigo"
+            android:layout_width="95sp"
+            android:layout_height="wrap_content" style="@style/CodeFont_label_value"/>
+        
+        <TextView
+            android:id="@+id/fila_lista_pedidos_total"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content" style="@style/CodeFont_label_value"/>
+        
+        <TextView
+            android:id="@+id/fila_lista_pedidos_hora"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content" style="@style/CodeFont_label_value"/>
+    </LinearLayout>
+
+</LinearLayout>

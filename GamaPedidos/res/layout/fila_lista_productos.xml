@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45sp"
+    android:orientation="horizontal" android:gravity="left|center">
+
+
+    <TextView
+        android:id="@+id/fila_lista_producto_codigo_textview"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content" style="@style/CodeFont_label_value"/>
+
+    <TextView
+        android:id="@+id/fila_lista_producto_nombreProducto_textview"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content" android:textColor="#000000" android:textSize="13sp"/>
+
+
+    <TextView
+        android:id="@+id/fila_lista_producto_cajas_textview"
+        android:layout_width="40sp"
+        android:layout_height="wrap_content"
+        android:gravity="center" style="@style/CodeFont_label_value"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/vertical_separator"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/fila_lista_producto_unidades_textview"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:gravity="center" style="@style/CodeFont_label_value" android:layout_marginRight="5sp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/vertical_separator"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fila_lista_producto_precioi_textview"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        style="@style/CodeFont_label_value" android:gravity="right" android:layout_marginRight="5sp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/vertical_separator"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/fila_lista_producto_presentacion_textview"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        style="@style/CodeFont_label_value" android:gravity="right" android:layout_marginRight="5sp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/vertical_separator"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fila_lista_producto_existencia_textview"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        style="@style/CodeFont_label_value" android:layout_marginRight="5sp" android:gravity="right"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:background="@drawable/vertical_separator">
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/fila_lista_producto_bonificacion_textview"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        style="@style/CodeFont_label_value" android:gravity="right" android:layout_marginRight="5sp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/vertical_separator"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/fila_lista_producto_valor_textview"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        style="@style/CodeFont_label_value" android:gravity="right" android:layout_marginRight="5sp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout06"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/vertical_separator"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

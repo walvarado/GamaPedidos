@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/principal_background">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lista_pedidos_string_titulo" style="@style/CodeFont_title"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/secundary_background"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.97" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lista_pedidos_string_pedido"
+                        android:textColor="@color/color_label_textview" style="@style/CodeFont_label"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lista_pedidos_string_codigo"
+                        android:textColor="@color/color_label_textview" style="@style/CodeFont_label"/>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lista_pedidos_string_total"
+                        android:textColor="@color/color_label_textview" style="@style/CodeFont_label"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lista_pedidos_string_hora"
+                        android:textColor="@color/color_label_textview" style="@style/CodeFont_label"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/horizontal_separator" >
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lista_pedidos_pedidos_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.97" style="@style/ListView">
+
+                </ListView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>

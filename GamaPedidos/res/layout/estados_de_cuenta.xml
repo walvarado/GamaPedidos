@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/principal_background">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/estado_de_cuenta_cuentas_por_cobrar" style="@style/CodeFont_title"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:background="@drawable/background_listview" android:layout_marginBottom="5sp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estados_de_cuenta_string_saldo_total" android:layout_marginRight="5sp" style="@style/CodeFont_label_value"/>
+
+
+            <TextView
+                android:id="@+id/estados_de_cuenta_saldo_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" style="@style/CodeFont_label_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="175dp" android:background="@drawable/background_listview">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/CodeFont_label"
+                        android:layout_width="90sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estados_de_cuenta_mov_documento" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/CodeFont_label"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estados_de_cuenta_fecha" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/CodeFont_label"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estados_de_cuenta_total" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/CodeFont_label"
+                        android:layout_width="70sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estados_de_cuenta_abono" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="50sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estados_de_cuenta_saldo" style="@style/CodeFont_label"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@drawable/horizontal_separator" >
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/pedido_lista_estados_cuenta_listView"
+                    style="@style/ListView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="563dp" >
+                </ListView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/background_listview" android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LISTA DE PAGOS REALIZADOS" android:layout_gravity="center" style="@style/CodeFont_label"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/estados_de_cuenta_detalle_doc" style="@style/CodeFont_label"/>
+                
+                <TextView
+                    android:id="@+id/estados_de_cuenta_detalle_documento_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" android:layout_marginLeft="20sp" style="@style/CodeFont_label_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/estados_de_cuenta_detalle_saldo" style="@style/CodeFont_label"/>
+                
+                <TextView
+                    android:id="@+id/estados_de_cuenta_detalle_saldo_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" android:layout_marginLeft="20sp" style="@style/CodeFont_label_value"/>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/background_listview" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            style="@style/CodeFont_label"
+                            android:layout_width="65sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estados_de_cuenta_detalle_documento" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            style="@style/CodeFont_label"
+                            android:layout_width="65sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estados_de_cuenta_detalle_fecha" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            style="@style/CodeFont_label"
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estados_de_cuenta_detalle_abono" android:layout_marginLeft="20sp"/>
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            style="@style/CodeFont_label"
+                            android:layout_width="100sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estados_de_cuenta_detalle_tipo_pago" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1sp"
+                        android:background="@drawable/horizontal_separator" >
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/estados_de_cuenta_detalle_listView"
+                        style="@style/ListView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                    </ListView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

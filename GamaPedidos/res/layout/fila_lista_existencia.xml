@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30sp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/fila_lista_existencia_nombre_textview"
+        style="@style/CodeFont_label_value"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/fila_lista_existencia_precio_textview"
+        style="@style/CodeFont_label_value"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/fila_lista_existencia_existencia_textview"
+        style="@style/CodeFont_label_value"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>

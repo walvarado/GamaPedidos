@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/principal_background">
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/CodeFont_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ver_pedido_title_textview" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:background="@drawable/secundary_background">
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tomar_pedido_total_textview" style="@style/CodeFont_label"/>
+
+
+            <TextView
+                android:id="@+id/tomar_pedido_total_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp" android:layout_marginRight="10sp" style="@style/CodeFont_label_value"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/tomar_pedido_buscar_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1" android:hint="@string/tomar_pedido_buscar_articulo_edittext">
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            style="@style/CodeFont_label"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            style="@style/CodeFont_label"
+                            android:layout_width="130sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tomar_pedido_nombre_tabla_textview" />
+
+                        <TextView
+                            android:id="@+id/TextView06"
+                            style="@style/CodeFont_label"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/tomar_pedido_cajas_tabla_textview" />
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout01"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/vertical_separator"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            style="@style/CodeFont_label"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/tomar_pedido_unidades_tabla_textview" />
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout02"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/vertical_separator"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="55sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tomar_pedido_precio_tabla_textview" style="@style/CodeFont_label"/>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout03"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/vertical_separator"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1sp" android:background="@drawable/horizontal_separator">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/tomar_pedido_lista_productos_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" style="@style/ListView">
+
+                </ListView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

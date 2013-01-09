@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/aplicaciones/!svn/ver/200/Mercadisa/trunk/res/menu
+END
+detalle_cliente_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/aplicaciones/!svn/ver/261/Mercadisa/trunk/res/menu/detalle_cliente_menu.xml
+END
+pedido_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/aplicaciones/!svn/ver/258/Mercadisa/trunk/res/menu/pedido_menu.xml
+END
+contextmenu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/aplicaciones/!svn/ver/258/Mercadisa/trunk/res/menu/contextmenu.xml
+END
+menuprincipal_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/aplicaciones/!svn/ver/46/Mercadisa/trunk/res/menu/menuprincipal_menu.xml
+END
+tomar_pedido_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/aplicaciones/!svn/ver/139/Mercadisa/trunk/res/menu/tomar_pedido_menu.xml
+END
+estado_de_cuenta_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/aplicaciones/!svn/ver/200/Mercadisa/trunk/res/menu/estado_de_cuenta_menu.xml
+END

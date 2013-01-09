@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/principal_background">
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/motivonocompra_title_textview" style="@style/CodeFont_title"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:background="@drawable/secundary_background" android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motivonocompra_motivo_textview" style="@style/CodeFont_label"/>
+
+        <Spinner
+            android:id="@+id/motivonocompra_motivos_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/motivonocompra_entrar_button"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:text="@string/motivonocompra_enviar_button" />
+
+            <Button
+                android:id="@+id/motivonocompra_cancelar_button"
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:text="@string/motivonocompra_cancelar_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</LinearLayout>
